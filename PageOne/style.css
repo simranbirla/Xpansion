@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Proxima Nova", Georgia, sans-serif !important;
+  background-color: #f6f7f8 !important;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  height: 80px;
+  align-items: center;
+  background-color: white;
+}
+
+header > img {
+  height: 50px;
+}
+
+.header_right img {
+  height: 20px;
+}
+
+.header_right,
+.main_bottom-right .filter {
+  display: flex;
+  gap: 10px;
+}
+
+nav {
+  height: 90px;
+  padding: 2em;
+  font-size: 14px;
+}
+
+main {
+  padding: 0 2em;
+}
+
+.main_top,
+.main_bottom,
+.main_bottom-right {
+  display: flex;
+  gap: 24px;
+}
+
+.main_top-left,
+.main_bottom-left {
+  width: 30%;
+}
+
+.main_bottom {
+  margin: 24px 0;
+}
+.main_top-right {
+  width: 70%;
+  padding: 0 2em;
+  position: relative;
+}
+
+.main-inner {
+  background-color: #2e90e5;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  display: none;
+  border-radius: 5px;
+}
+
+.main-inner.on {
+  display: flex;
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.main_top-right .text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  width: 40%;
+}
+
+.main_top-right .text a {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.main_top-right .text a:hover {
+  color: white;
+  text-decoration: underline 3px #010c16;
+}
+
+.main_top-right .text h2 {
+  font-size: 56px;
+}
+
+.main_top-right .text h4 {
+  font-size: 20px;
+  word-spacing: 2px;
+}
+
+.main_top-right a {
+  color: white;
+}
+
+.main_top-left,
+.main_bottom-left .prices,
+.main_bottom-left .color,
+.main_bottom-left .brand {
+  background-color: white;
+  padding: 20px;
+}
+
+.main_top-left h3,
+.main_bottom-left .brand {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.main_top-left ul,
+.main_bottom-left .brand ul {
+  padding: 0;
+}
+
+.main_top-left ul li,
+.main_bottom-left .brand ul li {
+  list-style-type: none;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.main_bottom-left .brand ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main_bottom-left .prices .labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices .labels input {
+  padding: 10px;
+  width: 40%;
+  border: none;
+}
+
+.more {
+  background-color: white !important;
+  color: #2e90e5 !important;
+}
+
+select {
+  padding: 10px;
+}
+
+.more:hover {
+  border: 2px solid #2e90e5;
+}
+
+.main_bottom-right {
+  width: 70%;
+  flex-direction: column;
+}
+
+.main_bottom-right .filter {
+  background-color: white;
+  align-items: center;
+  padding: 1em;
+  gap: 30px;
+}
+
+.main_bottom-right .filter p {
+  align-self: center;
+  margin: auto 0;
+}
+
+.main_bottom-right .product-grid {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-grid .product {
+  background-color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2em;
+  width: 300px;
+}
+
+.product-grid .product img {
+  width: 250px;
+}
+.product p {
+  color: rgb(196, 8, 8);
+}
+
+.product p span {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.rating > span:before {
+  content: "\2605";
+  position: absolute;
+  color: yellow;
+}
+
+.rating .black:before {
+  content: "";
+  position: absolute;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 0 2em;
+}
+
+.footer_top {
+  display: flex;
+  gap: 210px;
+}
+
+.footer_right,
+.footer_mid,
+.footer_left {
+  width: 20%;
+  font-size: 15px;
+}
+
+.footer_right img {
+  height: 70px;
+  margin: 0;
+}
+
+.footer_left h3,
+.footer_mid h3 {
+  font-size: 25px;
+  display: block;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  line-height: 70px;
+}
+
+.footer_mid .icons img {
+  margin: 0 20px;
+  height: 20px;
+}
+
+.footer_left p,
+.footer_left address {
+  margin: 0;
+}
+
+.footer_bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_bottom p {
+  color: gray;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.colors label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
+
+.colors label div {
+  width: 30px;
+  height: 30px;
+  background-color: #2e90e5;
+  border-radius: 50%;
+  position: relative;
+}
+
+.colors label .red {
+  background-color: red;
+}
+
+.colors label .green {
+  background-color: green;
+}
+
+.colors label .black {
+  background-color: black;
+}
+
+.colors label .orange {
+  background-color: orange;
+}
+
+input[type="radio"]:checked ~ div::before {
+  content: "";
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  background-color: aqua;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:checked ~ .red::before {
+  background-color: red;
+}
+
+input[type="radio"]:checked ~ .red {
+  background-color: white;
+  border: 2px solid red;
+}
+
+input[type="radio"]:checked ~ .black::before {
+  background-color: black;
+}
+
+input[type="radio"]:checked ~ .black {
+  background-color: white;
+  border: 2px solid black;
+}
+
+input[type="radio"]:checked ~ .green::before {
+  background-color: green;
+}
+
+input[type="radio"]:checked ~ .green {
+  background-color: white;
+  border: 2px solid green;
+}
+
+input[type="radio"]:checked ~ .blue::before {
+  background-color: #2e90e5;
+}
+
+input[type="radio"]:checked ~ .blue {
+  background-color: white;
+  border: 2px solid #2e90e5;
+}
+
+input[type="radio"]:checked ~ .orange::before {
+  background-color: orange;
+}
+
+input[type="radio"]:checked ~ .orange {
+  background-color: white;
+  border: 2px solid orange;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+input:invalid {
+  border: solid red 3px;
+}

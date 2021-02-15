@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- for unminified version add this -->
+<link rel="stylesheet" type="text/css" href="../proxima-nova-web-fonts-master/proxima-nova-web-fonts-master/fonts/fonts.css" />
+<!-- for minified version add this -->
+<link rel="stylesheet" type="text/css" href="../proxima-nova-web-fonts-master/proxima-nova-web-fonts-master/fonts/fonts.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+ </head>
+<body>
+    <header>
+     <img src="utils/beep-1@2x.png" alt="logo">
+     <div class="header_right">
+         <div>
+        <img src="utils/Icon material-notifications-none@2x.png" alt="bell" >
+    </div>
+        <div>
+            <img src="utils/profile_close_2@2x.png" alt="user" >
+           <span> My profile </span>
+        </div>
+        <div>
+            <img src="utils/bag_3@2x.png" aLT="BAG ICON" >
+            <span>0 items</span>
+        </div>
+        <div>
+        <img src="utils/search-icon@2x.png" alt="Search" >
+    </div>
+     </div>
+    </header>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+    <main>
+    <div class="main_top">
+       <div class="main_top-left">
+           <h3>All Categories</h3>
+           <ul>
+               <li style="color:#2e90e5 ">Accesories</li>
+               <li>Cables &amp; Docks</li>
+               <li>Cases &amp; Films</li>
+               <li>Charging devices</li>
+               <li>Connected Homes</li>
+           </ul>
+       </div>
+       <div class="main_top-right">
+           <div class="main-inner on">
+         <div class="text">
+            <h2>iPhone 8</h2>
+            <h4>Performace and design. Taken right to the edge</h4>
+            <a href="#">SHOP NOW</a>
+         </div>
+         <div class="photo">
+             <img src="utils/pic.png" alt="iphone">
+         </div>
+        </div>
+
+        <div class="main-inner" style="background-color: darkblue;">
+            <div class="text">
+               <h2>iPhone 9</h2>
+               <h4>Performace and design. Taken right to the edge</h4>
+               <a href="#">SHOP NOW</a>
+            </div>
+            <div class="photo">
+                <img src="utils/pic.png" alt="iphone">
+            </div>
+           </div>
+
+           <div class="main-inner" style="background-color: black;">
+            <div class="text">
+               <h2>iPhone X</h2>
+               <h4>Performace and design. Taken right to the edge</h4>
+               <a href="#">SHOP NOW</a>
+            </div>
+            <div class="photo">
+                <img src="utils/pic.png" alt="iphone">
+            </div>
+           </div>
+
+           <div style="text-align:center" class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+       </div> 
+
+    </div>
+    <div class="main_bottom">
+       <div class="main_bottom-left">
+         <div class="prices">
+           <h3>Prices</h3>
+           <div class="labels">
+           <label for="min">
+               Min  
+            </label>
+        
+            <label for="max">
+                Max 
+            </label>
+        </div>
+        <div class="labels">
+             <input type="number" placeholder="$499" min="0" id="min">
+             <p>---</p>
+             <input type="number" min="0" placeholder="$499" id="max">
+            </div>
+            </div>
+         <div class="color">
+              <h3>COLOR</h3>
+              <div class="colors">
+              <label>
+                <input type="radio" id="blue" name="key" value="value" checked />
+              <div class="red"></div>  
+              </label>
+              <label>
+                <input type="radio" name="key" id="green" value="another-value" />
+              <div class="blue"></div>  
+              </label>
+              
+              <label>
+                <input type="radio" name="key" id="black" value="another-value" />
+              <div class="green"></div>  
+              </label>
+              
+              <label>
+                <input type="radio" name="key" id ="purple" value="another-value" />
+              <div class="orange"></div>  
+              </label>
+              
+              <label>
+                <input type="radio" name="key" id="orange" value="another-value" />
+              <div class="black"></div>  
+              </label>
+            </div>
+         </div>
+
+         <div class="brand">
+           <h3>BRAND</h3>
+           <ul>
+           <li style="color: #2e90e5 ;">Apple  <span>99</span></li>
+           
+           <li>Beats <span>99</span></li>
+           
+           <li>Samsung  <span>99</span></li>
+           
+           <li>Siemens<span>99</span></li>
+        </ul> 
+        </div> 
+         <button class="more btn">MORE</button>
+       </div>
+       <div class="main_bottom-right">
+          <div class="filter">
+               <p>13 items</p>
+               <label>Sort By:
+                <select>
+                    <option value="name">Name</option>
+                    
+                    <option value="price">Price</option>
+                    
+                    <option value="new">Popularity</option>
+                    
+                </select>       
+            </label>
+            <label>
+                Show : <select>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                </select>
+            </label>
+          </div>
+          <div class="product-grid">
+              <div class="product">
+                    <img src="utils/headphones.png">
+                    <h5>Beats Solo2 On Ear Headphones</h5>
+                    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+                    <p>$499 <span>$599</span></p>
+              </div>
+              <div class="product">
+                <img src="utils/headphones.png">
+                <h5>Beats Solo2 On Ear Headphones</h5>
+                <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+                <p>$499 <span>$599</span></p>
+          </div>
+          <div class="product">
+            <img src="utils/headphones.png">
+            <h5>Beats Solo2 On Ear Headphones</h5>
+            <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+            <p>$499 <span>$599</span></p>
+      </div>
+      <div class="product">
+        <img src="utils/headphones.png">
+        <h5>Beats Solo2 On Ear Headphones</h5>
+        <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+        <p>$499 <span>$599</span></p>
+  </div>
+  <div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+<div class="product">
+    <img src="utils/headphones.png">
+    <h5>Beats Solo2 On Ear Headphones</h5>
+    <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="black">☆</span>
+</div>
+    <p>$499 <span>$599</span></p>
+</div>
+
+          </div>
+          <div class="center">
+            <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="pageNo active">1</a>
+            <a href="#" class="pageNo" class="active">2</a>
+            <a href="#" class="pageNo">3</a>
+            <a href="#" class="pageNo">4</a>
+            <a href="#" class="pageNo">5</a>
+            <a href="#" class="pageNo">6</a>
+            <a href="#">&raquo;</a>
+            </div>
+          </div>
+       </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+        <div class="footer_right">
+          <img src="utils/beepgray.png" alt="logo">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis atque dolore quis dicta, possimus cupiditate, minus.Since the 1500s,when an unknown printer</p>
+        </div>
+        <div class="footer_mid">
+           <h3>Follow Us</h3>
+           <p>Since thr 1500s, when an unknown printer took a gallow of type and scrambled</p>
+           <div class="icons">
+            <img src="utils/facebook@2x.png" alt="facebook">
+            <img src="utils/twitter@2x.png" alt="twitter">
+           </div>
+        </div>
+
+        <div class="footer_left">
+            <h3>Contact Us</h3>
+            <address>My company , 4578 Mamora Road Glassgaon D09GR5</address>
+            <p>Call us now : 012-345-678</p>
+            <p>Email us at : supportat@whatever.com</p>
+        </div>
+    </div>
+        <div class="footer_bottom">
+            <p>	&#169; 2021 Ecommerce site by www.beep.com</p>
+         <div class="cards">
+             <img src="utils/Western-union.png" alt="western union">
+             <img src="utils/Group 19.png" alt="master">
+             <img src="utils/Paypal.png" alt="paypal">
+             <img src="utils/Shape 328.png" alt="visa">
+         </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
